@@ -1,0 +1,132 @@
+.about-container {
+  margin: 100px auto 0 auto;
+  height: 100%;
+}
+
+span {
+  color: orange;
+}
+
+.about-container > h1 {
+  color: #333;
+  text-align: center;
+}
+
+.about-grid {
+  margin-top: 50px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+}
+
+.about-grid2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+}
+
+.about-grid3 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+}
+
+.about-grid-item {
+  height: 500px;
+}
+
+.grid1 > p,
+.grid4 > p,
+.grid5 > p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.grid2 {
+  background-image: url("./images/burger1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid3 {
+  background-image: url("./images/chef1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid6 {
+  background-image: url("./images/outside.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.cow-icon {
+  font-size: 10rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.chef-icon,
+.burger-icon {
+  font-size: 9rem;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.underline-img {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.curly-line {
+  margin: -20px auto 20px auto;
+  width: 25%;
+  height: 100px;
+}
+
+@media screen and (max-width: 1340px) {
+  .grid1 > p,
+  .grid4 > p,
+  .grid5 > p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .grid1 > p,
+  .grid4 > p,
+  .grid5 > p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .about-grid,
+  .about-grid2,
+  .about-grid3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-grid2 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid3 {
+    background-position: right;
+  }
+}
